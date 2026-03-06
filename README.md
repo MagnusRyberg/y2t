@@ -1,3 +1,49 @@
+# Multi-View YouTube Player
+
+This React app lets you view the same YouTube video in multiple embedded players at once. Enter a YouTube video URL and select how many players you want to display. Each player is independently controllable.
+
+## Features
+
+- Enter any YouTube video URL
+- Choose number of simultaneous views (1-10)
+- Each player is a separate, independently controlled YouTube embed
+
+## Getting Started
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+
+- `src/app/page.tsx`: Main page, will contain the multi-view player UI
+- `src/app/layout.tsx`: App layout and global styles
+- `src/app/globals.css`: Tailwind and custom CSS
+
+## Customization
+
+To implement the multi-view player:
+
+- Add a form to `page.tsx` for YouTube URL and number of players
+- Render multiple `<iframe>` embeds for the selected video
+- Each embed should use the YouTube Player API for independent control
+
+## License
+
+MIT
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
